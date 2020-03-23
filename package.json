@@ -4,6 +4,8 @@
   "description": "Full stack database app",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client",
     "server": "nodemon server"
   },
   "repository": {
@@ -25,6 +27,7 @@
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "npm-cli": "^0.1.0",
     "pg": "^7.18.2",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
