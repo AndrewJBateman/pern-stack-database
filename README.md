@@ -21,17 +21,17 @@
 
 * PostgreSQL needs to be installed and running - I started it from my Windows 10 PostgreSQL 12 dropdown option 'SQL shell (psql)'
 * Postman used to test the backend before frontend was available
+* Postgresql shell commands: `\l` list all databases. `\c database1` connect to database1. `\dt` inspect tables. `\q` to quit.
 
 ### Frontend
 
-* React frontend includes a city selection user input field and a dropdown list of cities. Select a city to see the weather.
+* React frontend includes a city selection user input field and a dropdown list of cities. Select a city to see the weather there.
 * [JavaScript XML (JSX)](https://reactjs.org/docs/introducing-jsx.html) used to write HTML elements in Javascript
 
 ## Screenshots
 
 ![Backend screenshot](./img/postgresql.png)
 ![Frontend screenshot](./img/weather.png)
-![Frontend screenshot](./img/heroku.png)
 
 ## Technologies - Backend
 
@@ -55,8 +55,7 @@
 * Install [nodemon v2.0.2](https://www.npmjs.com/package/nodemon) globally if you don't already have it
 * Install [PostgreSQL](https://www.postgresql.org/) & run it (requires the password you created during installation)
 * Add postgresql database & weather API access credentials to .env file
-* Run `nodemon server` for a dev server
-* `http://localhost:5000/` can be accessed for CRUD operations such as POST, GET, PUT, DELETE etc. using Postman
+* Run `nodemon server` for a dev server on port 5000
 
 ## Setup - Frontend
 
@@ -65,12 +64,16 @@
 * Alternatively - and better - bootstrap a new React project using `npx create-react-app my-app`
 * Run `npm start`. Frontend will open at `http://localhost:3000/`
 
+## Setup - Full stack
+
+* From top level `\pern-stack-database` run `npm run dev` for a dev server on port 5000 and a React fontend at `http://localhost:3000/`
+
 ## Code Examples - Backend
 
-* static method to add city to database list of cities.
+* [Static method used](https://javascript.info/static-properties-methods) to add city to database list of cities.
 
 ```javascript
-  // callback function - if error return it to callback. If no error thhen return rows (empty set)
+  // callback function - if error return it to callback. If no error then return rows (empty set)
   static insert (city, callback) {
     db.query('INSERT INTO cities (city_name) VALUES ($1)', [city], (err, res) => {
       if (err.error)
@@ -104,7 +107,6 @@
 ## Features - Backend
 
 * All data stored in PostgreSQL database that can also be viewed and changed from the PostgreSQL shell (psql)
-* [Static methods used](https://javascript.info/static-properties-methods)
 
 ## Features - Frontend
 
@@ -114,8 +116,9 @@
 
 ## Status & To-Do List
 
-* Status: Working front and back ends.
-* To-Do: Add commenting. Add functionality.
+* Status: Working front and back ends. App works and stores city names in PostgreSQL database. Deploy to Heroku not working - could be npm dependency issues or missing API access credentials in Heroku.
+* To-Do: Change backend so it checks if city already in database before adding it. Add commenting. Add functionality
+* Solve deploy issues: retry video 4 from 9.10 to create the correctly named database
 
 ## Inspiration/General Tools
 
@@ -125,6 +128,7 @@
 * [Full Stack React App Tutorial (Beginners) | Part #4 – Deployment](https://www.youtube.com/watch?v=0eGA1zYvyeU)
 * [Full Stack React App Tutorial (Beginners) | Part #5 – Best Practices (Bonus)](https://www.youtube.com/watch?v=uajUz8rswyM)
 * [React documentation](https://reactjs.org/docs/getting-started.html)
+* [PostgreSQL Quick Command List](http://jcsites.juniata.edu/faculty/rhodes/dbms/pgsql.htm)
 * [Enable Emmet support for JSX in Visual Studio Code | React](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 * [js-beautify for VS Code](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
