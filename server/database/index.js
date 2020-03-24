@@ -37,7 +37,6 @@ class Database {
         callback({}, res.rows);
       });
     });
-
   }
 
   end () {
