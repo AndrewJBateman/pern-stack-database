@@ -44,7 +44,7 @@
 
 ## :signal_strength: Technologies - Frontend
 
-* [React framework v16](https://reactjs.org/)
+* [React framework v17](https://reactjs.org/)
 * [Create React App](https://github.com/facebookincubator/create-react-app) used to bootstrap frontend React app
 * [Bootstrap v4](https://getbootstrap.com/) component library
 
@@ -52,7 +52,7 @@
 
 * Change to `/server` directory
 * Install dependencies using `npm i`
-* Install [nodemon v2](https://www.npmjs.com/package/nodemon) globally if you don't already have it
+* Install [nodemon](https://www.npmjs.com/package/nodemon) globally if you don't already have it
 * Install [PostgreSQL](https://www.postgresql.org/) & run it (requires the password you created during installation)
 * Add postgresql database & weather API access credentials to .env file
 * Run `nodemon server` for a dev server on port 5000
