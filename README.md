@@ -1,8 +1,13 @@
 # :zap: PERN Full Stack Database
 
-* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend. Currently shows weather data from [OpenWeather API](https://openweathermap.org/api). Tutorial code (see 'Inspiration' below)
+* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend.
+* Currently shows weather data from [OpenWeather API](https://openweathermap.org/api). Tutorial code (see 'Inspiration' below)
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/pern-stack-database?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/pern-stack-database?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/pern-stack-database?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/pern-stack-database?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -132,6 +137,10 @@
 * [Enable Emmet support for JSX in Visual Studio Code | React](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 * [js-beautify for VS Code](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
